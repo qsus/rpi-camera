@@ -1,3 +1,6 @@
-raw*
+*.raw
 out/*
 !out/git-store
+logs/*
+!logs/git-store
+.env
