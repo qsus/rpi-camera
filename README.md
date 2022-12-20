@@ -4,6 +4,7 @@ WARNING: Work in progress!
 This script will record videos from Raspberry Pi and upload them to VPS. Then you can:
 - Download the files to your PC
 - Write a server backend so you can easily access them
+- Use my simple server backend [rpi-camera-server](https://github.com/qsus/rpi-camera-server)
 
 This script will record an hour long videos (except the first one), while making sure that each video ends in XX:00. After each recorded video, upload.sh is executed in paralel, which will first convert the video to .mkv with a custom bitrate and then upload it to VPS.
 
