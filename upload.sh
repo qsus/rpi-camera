@@ -4,9 +4,9 @@ timestamp=$1
 time ffmpeg \
 	-i "$timestamp.raw" \
 	-b $bitrate \
-	"out/$timestamp.mkv" |
+	"out/$timestamp.mov" |
 tee --append logs/ffmpeg.log
 
 rm "$timestamp.raw"
 
-rsync "out/$timestamp.mkv" "$destination"
+rsync "out/$timestamp.mov" "$destination"
